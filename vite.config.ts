@@ -27,7 +27,6 @@ export default defineConfig({
       '/api': {
         target: 'https://api.cloudflare.com',
         changeOrigin: true,
-        secure:false,
         rewrite: (path) => path.replace(/^\/api/, '/client/v4')
       },
     },
